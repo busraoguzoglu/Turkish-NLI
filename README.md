@@ -8,3 +8,6 @@ Natural Language Inference for Turkish. Course Project.
 https://github.com/bentrevett/pytorch-nli
 
 Code works in this way for SNLI corpus.
+
+3 - SNLI-tr (code for dataset) 
+4 - XNLI_english.ipynb
