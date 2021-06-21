@@ -12,3 +12,11 @@ Code works in this way for SNLI corpus.
 3 - SNLI-tr (code for dataset) 
 
 4 - XNLI_english.ipynb
+
+5 - RoBERTa-en.py
+
+6 - RoBERTa-tr.py
+
+7 - XNLI_turkish.ipynb
+
+8 - ConvBERT
