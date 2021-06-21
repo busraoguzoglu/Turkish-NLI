@@ -19,4 +19,6 @@ Code works in this way for SNLI corpus.
 
 7 - XNLI_turkish.ipynb
 
-8 - ConvBERT
+8 - MultiNLI-tr (code for dataset)
+
+9 - ConvBERT
