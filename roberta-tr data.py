@@ -27,17 +27,23 @@ roberta_large_mnli.eval()
 with open('multinli-tr/valid_matched_noIndex.tsv') as fin:
     fin.readline()
     for index, line in enumerate(fin):
-        print("at line ", index)
+        # print("at line ", index)
         tokens = line.strip().split('\t')
         # sent1, sent2, target = tokens[8], tokens[9], tokens[-1]
         sent1, sent2, target = tokens[1], tokens[2], tokens[0]
         tokens = roberta_large_mnli.encode(sent1, sent2)
         prediction = roberta_large_mnli.predict('mnli', tokens).argmax().item()
         prediction_label = label_map[prediction]
-        ncorrect += int(prediction_label == target)
+        # ncorrect += int(prediction_label == target)
+        # ncorrect += int(prediction == target)
+        if (int(prediction) == int(target)):
+            ncorrect = ncorrect + 1
+        print("prediction: ", prediction)
+        print("target: ", target)
+        print("correct pred num: ", ncorrect)
+
         nsamples += 1
 print('| Accuracy: ', float(ncorrect)/float(nsamples))
-# valid_matched_noIndex Accuracy:  0.0 -label_map = {0: 'contradiction', 1: 'neutral', 2: 'entailment'}
 
 #ROBERTA MNLI ILE TURKCE DENERSEK
 #training data[0]
@@ -55,3 +61,6 @@ tokens = roberta_large_mnli.encode('Ekibimin bir üyesi emirlerinizi büyük bir
 roberta_large_mnli.predict('mnli', tokens).argmax()  # 2 predict etti - datasette:0
 print(roberta_large_mnli.predict('mnli', tokens).argmax())
 
+#contradiction 2
+#entailment 0
+#neutral 1
