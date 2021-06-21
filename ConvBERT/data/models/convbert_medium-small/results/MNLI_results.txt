@@ -1,1 +1,0 @@
-MNLI: accuracy: 55.35 - loss: 0.93
