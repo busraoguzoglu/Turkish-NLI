@@ -1,0 +1,4 @@
+The code for ConvBERT-turkish model can be downloaded from:
+https://drive.google.com/file/d/1vM56w52IKsuHGWSRQ9NZIV5GhkoDy2un/view?usp=sharing
+
+To run the code for English, the files in the directory ConvBert/data/finetuning_data/mnli should be changed with English data.
