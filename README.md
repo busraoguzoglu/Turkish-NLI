@@ -1,5 +1,5 @@
 # Turkish-NLI
-Natural Language Inference for Turkish. Course Project.
+Natural Language Inference for Turkish. Course Project for CMPE58T Advanced NLP Course of Boğaziçi University.
 
 1 - BiLSTM for NLI.ipynb
 
