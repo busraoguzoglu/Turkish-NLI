@@ -5,9 +5,7 @@ Natural Language Inference for Turkish. Course Project.
 
 2 - NLI_TR_Tokenized_Dataframe.ipynb
 
-https://github.com/bentrevett/pytorch-nli
-
-Code works in this way for SNLI corpus.
+Reference: https://github.com/bentrevett/pytorch-nli
 
 3 - SNLI-tr (code for dataset) 
 
@@ -22,3 +20,5 @@ Code works in this way for SNLI corpus.
 8 - MultiNLI-tr (code for dataset)
 
 9 - ConvBERT
+
+10 - ELECTRA
