@@ -1,0 +1,5 @@
+Code for ELECTRA finetuning can be downloaded from the following repository:
+https://github.com/google-research/electra
+
+In order to do finetuning with MNLI-TR,
+in data/finetuning_data/mnli change with Turkish MNLI files.
